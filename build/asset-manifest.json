@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f642d69.css",
+    "main.js": "/static/js/main.a71ede17.js",
+    "static/media/hero1.png": "/static/media/hero1.7098c982dfd9d52afea6.png",
+    "static/media/multimodal-emotion-recognition.png": "/static/media/multimodal-emotion-recognition.7eb2aa7d8afe07fa1bb2.png",
+    "static/media/Doom.png": "/static/media/Doom.381cc63382cf574c8b3f.png",
+    "static/media/Gravity.png": "/static/media/Gravity.17e68ed9cf2de9db8fb9.png",
+    "static/media/TherapAI.png": "/static/media/TherapAI.83f3acfad70c50aed80c.png",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.9f642d69.css",
+    "static/js/main.a71ede17.js"
+  ]
+}
