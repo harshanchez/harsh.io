@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
-import { introdata, meta } from "../../content_option";
+import { introdata, meta, resumeConfig } from "../../content_option";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -47,6 +47,19 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                  <a
+                    href={resumeConfig.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text_2"
+                  >
+                    <div className="ac_btn btn">
+                      {resumeConfig.label}
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </a>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
+import { logotext, resumeConfig, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
@@ -44,6 +44,17 @@ const Headermain = () => {
                   <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
                   </li>
                   <li className="menu_item">
+                    <a
+                      className="my-3"
+                      href={resumeConfig.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={handleToggle}
+                    >
+                      {resumeConfig.label}
+                    </a>
+                  </li>
+                  <li className="menu_item">
                   <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
                   </li>
                 </ul>
@@ -52,9 +63,18 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
+              <a href={socialprofils.github} target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a href={socialprofils.linkedin} target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+              <a href={socialprofils.freelancer} target="_blank" rel="noreferrer">
+                Freelancer
+              </a>
+              <a href={resumeConfig.link} target="_blank" rel="noreferrer">
+                {resumeConfig.label}
+              </a>
             </div>
             <p className="copyright m-0">copyright __ {logotext}</p>
           </div>
